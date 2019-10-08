@@ -11,9 +11,9 @@ class Detail extends Component {
   // Add code to get the book with an _id equal to the id in the route param
   // e.g. http://localhost:3000/books/:id
   // The book id for this route can be accessed using this.props.match.params.id
-  componentDidMoutn(){
+  componentDidMount(){
     API.getBook(this.props.match.params.id)
-    .then(res => this.setState({book:res.data}))
+    .then(res => this.setState({book: res.data}))
     .catch(err => console.log(err));
   }
 
